@@ -1,0 +1,16 @@
+Mix command tool
+- Creates projects: mix new project
+- Compiles projects
+- Runs tasks
+- Manages dependencies
+
+
+Interactive shell
+iex -S mix
+recompile to recompile the project
+Ctrl S to exit
+
+
+Modules
+- collection of functions
+- defmodule Name do end
