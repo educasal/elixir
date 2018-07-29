@@ -1,17 +1,5 @@
 defmodule Cards do
-  @moduledoc """
-  Documentation for Cards.
-  """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Cards.hello
-      :world
-
-  """
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
     suits = ["Diamonds", "Spades", "Clubs", "Hearts"]
@@ -30,7 +18,8 @@ defmodule Cards do
   end
 
   def deal(deck, hand_size) do
-    Kernel.elem(Enum.split(shuffle(deck), hand_size), 0)
+    { hand, _ } = Enum.split(shuffle(deck), hand_size)
+    hand
   end
 
 
